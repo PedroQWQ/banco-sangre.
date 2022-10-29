@@ -1,167 +1,201 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Formulario De Trabajo</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/signature_pad@2.3.2/dist/signature_pad.min.js"></script>
-    <script src="app.js"></script>
+    <title>Banco de Sangre</title>
+    <link rel="icon" href="prsnmexicanos.jpg">
+    <script src="https://kit.fontawesome.com/a188062b10.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="estilos.css">
+    <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
 
-    <a href="Banco.html" title="Banco de Sangre" style="text-decoration: none; color:red;">Ir a la la pagina principal</a>
-    <div class="container mt-4">
-        <div class="row">
-            <div class="col-md-8 offset-md-2">
-                <h3 style="color: blue;">Formulario De Trabajo</h3>
-                <hr>
-                <form id="form">
-                    <div class="mb-3">
-                        <label for="curso" class="form-label">Trabajo al que aspiro</label>
-                        <select class="form-select" id="curso">
-                            <option value="">Seleccione un curso</option>
-                            <option value="Médico">Médico</option>
-                            <option value="Técnico">Técnico
-                            </option>
-                            <option value="Químico">Químico</option>
-                            <option value="Flebotomista">Flebotomista</option>
-                            <option value="Recepcionista">Recepcionista</option>
-                            <option value="Intendencia">Intendencia</option>
-                        </select>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+<a href="https://api.whatsapp.com/send?phone=5195508107&text=Hola%21%20Quisiera%20m%C3%A1s%20informaci%C3%B3n%20sobre%20Varela%202." class="float" target="_blank">
+<i class="fa fa-whatsapp my-float"></i>
+</a>
+  
+    
+    <div class="contenedor">
+
+        <header class="header">
+          <div class="menu">
+              <div class="logo">
+                 <img src="sangre.jpg" alt="mexicanos">
+              </div>
+              <nav class="nav">
+                  <a href="#">Inicio</a>
+                  <a href="https://es-la.facebook.com/">Facebook</a>
+                  <a href="https://www.whatsapp.com/">Whatsapp</a>
+                  <a href="https://www.instagram.com/">Instagram</a>
+                  <a href="https://twitter.com/?lang=es">Twitter</a>    
+                  <a id="trab" href="index2.html">¿Quieres trabajar con nosotros? </a>
+
+              </nav>
+              <div class="social">
+                    <i class="fa-brands fa-facebook"></i>
+                    <i class="fa-brands fa-twitter"></i>
+                    <i class="fa-brands fa-whatsapp"></i>
+                    <i class="fa-brands fa-instagram"></i>      
+              </div>
+
+          </div>  
+          <div class="texto">
+              <h2 id="banc">Banco De Sangre </h2>
+          </div>
+
+        </header>
+        
+        <div id="frase">"Ni batman, ni superman, los verdaderos súper héroes son los que donan su sangre con la intención de la vida de otros salvar"</div> 
+
+        <br>
+        <h1>Mision</h1>
+        <br>
+        <div class="cont">
+            <div class="tarjeta-wrap">
+                <div class="tarjeta">
+                    <div class="adelante"></div>
+                    <div class="atras">
+                        <p>
+                            Somos un banco de sangre que se esfuerza por promover el desarrollo humano integrando a la sociedad en una cultura de donación voluntaria para proporcionar a nuestros pacientes stocks adecuados, seguros y oportunos.
+    
+                        </p>
                     </div>
-                    Escolaridad
-                    <select class="form-select" id="curso">
-                        <option value="Primaria">Primaria</option>
-                        <option value="secundaria">Secundaria</option>
-                        <option value="preparatoria">Preparatoria
-                        </option>
-                        <option value="Universidad">Universidad</option>
-                        <option value="Licenciatura">Licenciatura</option>
-                        <option value="Doctorado">Doctorado</option>
-                    </select>
-                    <br>
-                    <label>
-                        Fecha de nacimiento:
-                        <br>
-                        <input type="date" name="" id="">
-                        <br>
-                    </label>
-                    <br><br>
-                    <div class="row mb-3">
-                        <div class="col-md-6">
-                            <label for="nombre" class="form-label">Nombres</label>
-                            <input type="text" class="form-control" id="nombre">
-                        </div>
-                        <div class="col-md-6">
-                            <label for="apellido" class="form-label">Apellidos</label>
-                            <input type="text" class="form-control" id="apellido">
-                        </div>
-                    </div>
-
-                    <div class="mb-3">
-                        <label for="email" class="form-label">Correo electronico</label>
-                        <input type="email" class="form-control" id="email">
-                    </div>
-
-                    <div class="row mb-3">
-                        <div class="col-md-6">
-                            <label for="direccion" class="form-label">Direccion</label>
-                            <input type="text" class="form-control" id="direccion">
-                        </div>
-                        <div class="col-md-6">
-                            <label for="telefono" class="form-label">Telefono</label>
-                            <input type="text" class="form-control" id="telefono">
-                        </div>
-                    </div>
-
-                    <div class="row mb-3">
-                        <div class="col-md-2">
-                            <div>
-                                <label for="" class="form-label">Tiene hijos</label>
-                                <div class="form-check form-check-inline">
-                                    <input type="radio" name="hijos" class="form-check-input" id="hijos-si" value="1">
-                                    <label for="hijos-si" class="form-check-label">Si</label>
-                                </div>
-                                <div class="form-check form-check-inline">
-                                    <input type="radio" name="hijos" class="form-check-input" id="hijos-no" value="0"
-                                        checked>
-                                    <label for="hijos-no" class="form-check-label">No</label>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-10">
-                            <div>
-                                <label for="numeroHijos" class="form-label">Cuantos hijos tiene?</label>
-                                <select class="form-select" id="numeroHijos">
-                                    <option value="0">Seleccione una opcion</option>
-                                    <option value="1">1</option>
-                                    <option value="2">2</option>
-                                    <option value="3">3</option>
-                                    <option value="4">4</option>
-                                    <option value="Mas de 4">Mas de 4</option>
-                                </select>
-                            </div>
-                        </div>
-                    </div>
-
-
-                    <div class="row mb-3">
-                        <div class="col-md-3">
-                            <div>
-                                <label for="" class="form-label">Tiene alguna discapacidad?</label>
-                                <div class="form-check form-check-inline">
-                                    <input type="radio" name="discapacidad" class="form-check-input"
-                                        id="discapacidad-si" value="1">
-                                    <label for="discapacidad-si" class="form-check-label">Si</label>
-                                </div>
-                                <div class="form-check form-check-inline">
-                                    <input type="radio" name="discapacidad" class="form-check-input"
-                                        id="discapacidad-no" value="0" checked>
-                                    <label for="discapacidad-no" class="form-check-label">No</label>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-9">
-                            <div>
-                                <label for="discapacidad-desc" class="form-label">Cual es la discapacidad?</label>
-                                <input type="text" class="form-control" id="discapacidad-desc">
-                            </div>
-                        </div>
-                    </div>
- 
-                    
-                    <span class="d-block pb-2">Firma digital aqui</span>
-                    <div class="signature mb-2" style="width: 100%; height: 200px;">
-                        <canvas id="signature-canvas"
-                            style="border: 1px dashed red; width: 100%; height: 200px;"></canvas>
-                    </div>
-                     <br>
-                    <input type="button" value="Imprimir" class="printbutton" style="border:1px solid black;
-                    width:100%;
-                    height:auto;
-                    padding:5px;
-                    background:#B4BDD1;">
-
-
-                    <script> document.querySelectorAll('.printbutton').forEach(function(element) {
-                        element.addEventListener('click', function() {
-                            print();
-                        });
-                    });
-                  </script>
-                
-
-
-                </form>
+                </div>
             </div>
         </div>
+        
+        <br>
+        <h1>Visión</h1>
+        <br>
+        <div class="cont">
+            <div class="tarjeta-wrap">
+                <div class="tarjeta">
+                    <div class="adelante"> </div>
+                    <div class="atras">
+                        <p>
+                            Convertirnos en un banco de sangre reconocido a nivel nacional e internacional por su excelencia, liderazgo y seguridad de los componentes sanguíneos.
+    
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <br>
+        <h1>Valores</h1>
+        <br>
+        <div class="cont">
+            <div class="tarjeta-wrap">
+                <div class="tarjeta">
+                    <div class="adelante"> </div>
+                    <div class="atras">
+                        <p>
+                            	Eficiencia
+                            <br>
+                               Calidad
+                            <br>
+                               Disponibilidad
+                            <br>
+                            	Responsabilidad
+                            <br>
+                            	Honestidad
+
+    
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
     </div>
 
-</body>
+    <div id="preg"> <b>¿Qué se requiere para donar?</b>
+        <br>
+    Tener de 18 a 65 años.
+    <br>
+    Pesar más de 50 kg.
+    <br>
+    No consumir medicamentos ni alcohol en los últimos 3 días.
+    <br>
+    No consumir drogas en las ultimas 2 semanas.
+    <br>
+    Presentarse con una identificación oficial.
+    <br>
+    Tener sangre segura.
+    <br>
+    Etc...</div> 
+    
+    <br><br>
 
+   <div id="preg"> <b>¿Cuál es la máxima cantidad de sangre que se puede donar?</b> 
+    <br>
+        La cantidad máxima donada es de 480 mililitros de sangre y la mínima es de 420 mililitros de sangre.
+</div>
+      <br><br>
+    <div id="preg"> <b>¿Cuánto dura una extracción de sangre?</b> 
+        <br>
+        La extracción dura entre 7 y 10 minutos.</div>
+     <br><br>
+    <div id="preg"> <b>¿Cuánto te pagan por tu sangre?</b> 
+        <br>
+            Cuando donas sangre no te pagan porque la sangre no se puede comprar ni vender, en caso de que recibas dinero se considera tráfico
+            <br>
+            de órganos y se le impondrá prisión de 4 a 8 años, además de que recibira una multa.</div>
+       
+
+    <br><br><br><br>
+
+    <div class="contenedor2">
+        <form id="form" action="" class="form">
+          <h3 class="tag">Contacto</h3>
+          <label>
+              Nombre completo <span>*</span>
+              <input type="text" name="nombre" id="nombre" placeholder="Juan Perez" required>
+          </label>
+          <label>
+              Correo Electronico <span>*</span>
+              <input type="email" name="email" id="email" placeholder="JuanPerez@gmail.com" required>
+          </label>
+          
+          <label >
+              Queja o Sugerencia
+              <textarea name="mensaje" id="mensaje" cols="30" rows="10"></textarea>
+          </label>
+  
+         <button type="submit" class="btn">Enviar Mensaje</button>
+  
+        </form>
+        <a href="mailto:admin@gmail.com" id="envio"></a>
+      </div>
+  
+      <script>
+         let form=document.querySelector('#form');
+         let mensaje=document.querySelector('#envio');
+  
+         form.addEventListener('submit',manda)
+  
+         function manda(e){
+          e.preventDefault()
+          const form=new FormData(this);
+  
+          mensaje.setAttribute('href',`mailto:admin@gmail.com?subject=nombre
+          ${form.get('nombre')} correo=${form.get('email')}&body=${form.get(`mensaje`)}`)
+            
+          mensaje.click();
+      
+      }
+    
+      </script>
+
+      <br><br><br><br>
+      <footer>
+        <div id="TT_yWNEEk11kSl94IrK1fqzjjDzj7uKTp4EkjjzzZil4kDomom53">El tiempo - Tutiempo.net</div><script type="text/javascript" src="https://www.tutiempo.net/s-widget/l_yWNEEk11kSl94IrK1fqzjjDzj7uKTp4EkjjzzZil4kDomom53"></script>
+    </footer>
+
+    
+</body>
 </html>
